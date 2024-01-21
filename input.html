@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <form method="get" action="">
+        <lable>Enter Any Number : </lable>
+        <input type="number" required name="number-game"><br>
+
+        <lable>Range</lable>
+        <input type="number" required min="10" max="20">
+        <input type="submit" value="submit"><br>
+
+        <label>Step Value</label>
+        <input type="number" required step="2" min="2" max="20">
+        <input type="submit" value="submit"><br>
+        <hr>
+        <br>
+
+        <label>Mail</label>
+        <input type="email" required value="mail">
+        <input type="submit" value="submit"><br>
+
+        <label>multiple</label>
+        <input type="email" multiple="true" />
+        <input type="submit" value="submit"><br>
+        <hr>
+
+        <label>Fixed Size</label>
+        <input type="text" maxlength="6" placeholder="Pin Code" name="Pin">
+        <input type="text" maxlength="6" value="42" name="Pin">
+        <input type="submit" value="Submit">
+        <hr>
+
+        <input type="text" pattern="[a-z]{5}" name="Pattern">
+        <input type="submit" value="Submit"
+
+        <input type="tel" name="telephone" placeholder="Phone">
+
+ 
+    </form>
+    <hr>
+    <form method="post" action="/action.php">
+        <h1>Form Data</h1>
+        <div>
+            <input type="button" onclick="alert('Hello World Hi Ashitosh')" value="ClickMe"><br><br>
+
+            <input type="radio" id="male" name="gender" value="male" >Male
+            <input type="radio" id="female" name="gender" value="female">female
+            <input type="radio" id="other" name="gender" value="other">Other<br><br>
+
+            <h3>Check Box</h3><br>
+            <input type="checkbox" name="ch1" value="bike">bike
+            <input type="checkbox" name="ch2" value="car">Car
+            <input type="checkbox" name="ch3" value="train">train
+            <input type="checkbox" name="ch4" value="tractor">Tractor<br><br>
+
+            <h3>Select / Dropdown List</h3>
+            <select id="class1" name="class1" size="3" multiple>
+                <option value="First">First Year</option>
+                <option value="Second">Second Year</option>
+                <option value="Third">Third Year</option>
+                <option value="Final">Final Year</option>
+            </select>
+        </div> <br><br>
+
+        <textarea name="t1" id="ta" rows="5" cols="100">Radhe Krushna</textarea>
+        <hr><br>
+        <h3>Audio Tag</h3><br>
+
+        <audio controls> 
+            <source src="audio1.mp3" type="audio/mp3">
+        </audio><br><br>
+
+        <h3>Video Tag</h3>
+
+        <video height="300" width="500" controls muted poster="img.jpg" autoplayy>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+
+    </form>
+</body>
+</html>
