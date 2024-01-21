@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-color: lavender;
+            height: 500px;
+            width: 1200px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 20px 20px 0 0 ;
+            margin-left: 10px;
+            /*margin-top: 10px;*/
+            background-color: dimgray;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1> FlexBox Container Direction</h1>
+    <div id="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        
+    </div>
+    
+</body>
+</html>

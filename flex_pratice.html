@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Pratice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            background-color: black;
+            height: 80px;
+            color: rgb(255, 255, 255);
+            border-bottom: 5px solid rgb(205, 171, 20);
+            
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .logo_home{
+            height: 80px;
+            width: 90px;
+            margin-left: 10px;
+            
+        }
+
+
+        .name{
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            font-family: 'Permanent Marker', cursive;
+            box-sizing: content-box;
+        }
+
+        .surname{
+            font-size: 15px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        
+
+        .nav_bar a{
+            font-size: 15px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            color: rgb(255, 255, 255);
+            margin-right: 20px;
+            padding: 25px 0;
+            /*margin: 5px;*/
+        }
+
+        .nav_bar a:hover{
+            color: yellow;
+            border-bottom: 4px solid rgb(255, 255, 255);
+            font-size: 15px;
+            box-sizing: content-box;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+
+        <div class="logo">
+            <a href="#"> <img class="logo_home" src="myntra_logo.webp" alt="Logo"> </a>
+        </div>
+
+
+        <div class="name">KrushiVaibhav Farmhouse &nbsp<sub class="surname">Rohom Patil</sub></div>
+
+
+
+        <div class="nav_bar">
+            <a href="#">HOME</a>
+            <a href="#">PRODUCT</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+    </div>
+    <p>
+        <!-- <img src="logo.jpg"> -->
+    </p>
+    
+</body>
+</html>
